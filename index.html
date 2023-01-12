@@ -1,0 +1,20 @@
+<p>Enter a string to encode or unicode value(s) to decode.</p>
+<p>Note that multiple unicode values must be separated by commas.</p>
+<p>For example,<br> 
+enter https://example.com/ to encode (obfuscate) as 104, 116, 116, 112, 115, 58, 47, 47, 101, 120, 97, 109, 112, 108, 101, 46, 99, 111, 109, 47.<br>
+enter 104, 116, 116, 112, 115, 58, 47, 47, 101, 120, 97, 109, 112, 108, 101, 46, 99, 111, 109, 47 to decode as https://example.com/.</p>
+
+<form name="form1" id="form1">
+<label>Encoder Input  <input type="text" name="enc_input" id="enc_input" size="78" maxlength="4096" onClick="this.select()">
+
+<input type="button" name="button1" size="12" value="Encode" onClick="encode(document.form1.enc_input.value);"></label>
+<p>Output:<span id="encoded_output"></span></p>  
+<label>Decoder Input  <input type="text" name="dec_input" id="dec_input" size="78" maxlength="4096" onClick="this.select()">
+  
+<input type="button" name="button2" size="12" value="Decode" onClick="decode(document.form1.dec_input.value);"></label>
+<p>Output:<span id="decoded_output"></span></p>
+<button type="reset" id="reset" name="reset" size="12">Reset</button>
+
+</form>
+
+
